@@ -4,39 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- This is how we link a css file to a html file. We use a link element -->
+    <link rel="stylesheet" href="forms.css">
+
 </head>
 <body>
-   <form action="Register">
+    
+  <form action="/submit" method="post">
 
-    <label for="fName">f.Name</label>
-    <input type="text">
+    <!-- Text Input -->
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+    </div>
 
-    <label for="lName">l.Name</label>
-    <input type="text">
+    <!-- Password Input -->
+    <div>
+        <label for="password">password</label>
+        <input type="text" id="password" name="password">
+    </div>
+    
+    <!-- Email input -->
+    <div>
+        <label for="email :">email</label>
+        <input type="email :" id="email :" name="email :">
+    </div>
 
-    <label for="email">email</label>
-    <input type="email">
-
-    <label for="mobile">mobile</label>
-    <input type="number">
-
-    <label for="address">address</label>
-    <input type="text">
-
-    <label for="Gender:">Gender:
+    <!-- Radio Button -->
+    <div>
+    <label> Gender:</label>
     <label for="male">male</label>
-    <input type="radio">
+    <input type="radio" id="male" name="gender" value="male">
+     
     <label for="female">female</label>
-    <input type="radio">
-    </label>
+    <input type="radio" id="female" name="gender" value="female">
+    </div>
 
-    <label for="Comment">Comment</label>
-    <textarea name="Comment" id="Comment" cols="40" rows="10"></textarea>
+     <!-- Checkbox -->
+     <div>
+<label for="subscribe">Subscribe to newsletter:</label>
+<input type="checkbox" id="subscribe" name="subscribe" value="yes">
+     </div>
 
-    
-    
-    
+     <!-- Dropdown(select) -->
+     <div>
+        <label for="country">country</label>
+        <select name="country" id="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="fr">France</option>
+        </select>
+     </div>
 
-   </form>
+     <!-- Text area -->
+     <div>
+<label for="message">Message:</label>
+<textarea name="message" id="message" cols="50" rows="4"></textarea>
+     </div>
+
+     <!-- Submit Button -->
+     <div>
+        <input type="submit" value="Submit">
+     </div>
+     
+  </form> 
+
 </body>
 </html>
